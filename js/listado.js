@@ -1,29 +1,32 @@
-// Array de películas y series (igual que antes)
+// codigo Lau
 const catalogo = [
   {
     id: 1,
     titulo: "Inception",
     tipo: "pelicula",
     img: "assets/img/peliculas/inception.jpg",
-    wallPaper: "assets/img/series/wallpaper/inception.jpg",
+    wallPaper: "assets/img/peliculas/wallpaper/inception.jpg",
   },
   {
     id: 2,
-    titulo: "Interstellar",
-    tipo: "pelicula",
-    img: "assets/img/peliculas/interestellar.jpg",
-  },
-  {
-    id: 3,
     titulo: "The Dark Knight",
     tipo: "pelicula",
     img: "assets/img/peliculas/batman.jpg",
+    wallPaper: "assets/img/peliculas/wallpaper/dark_knight_landscape_new.jpg",
   },
   {
-    id: 4,
+    id: 3,
     titulo: "Avatar",
     tipo: "pelicula",
     img: "assets/img/peliculas/avatar.jpg",
+    wallPaper: "assets/img/peliculas/wallpaper/avatar.jpg",
+  },
+  {
+    id: 4,
+    titulo: "Interstellar",
+    tipo: "pelicula",
+    img: "assets/img/peliculas/interestellar.jpg",
+    wallPaper: "assets/img/series/peliculas/inception.jpg",
   },
   {
     id: 5,
@@ -66,7 +69,6 @@ const catalogo = [
     titulo: "Breaking Bad",
     tipo: "serie",
     img: "assets/img/series/breakingBad.jpg",
-    wallPaper: "assets / img / series / wallpaper / breakingBad.jpg",
   },
   {
     id: 12,
@@ -164,3 +166,34 @@ carruselHorizontal(
   "series-destacadas",
   catalogo.filter((s) => s.tipo === "serie").slice(0, 6)
 );
+
+//Buscador
+const inputBuscador = document.getElementById("buscador");
+const mensajeError = document.getElementById("mensaje-error");
+
+// Simulación de array de películas (o series)
+const peliculas = ["Matrix", "Titanic", "Inception", "Shrek", "Avatar"];
+
+inputBuscador.addEventListener("input", () => {
+  const texto = inputBuscador.value.toLowerCase().trim();
+
+  // Si está vacío, limpio todo
+  if (texto === "") {
+    mensajeError.textContent = "";
+    return;
+  }
+
+  // Filtrar películas
+  const resultados = peliculas.filter((peli) =>
+    peli.toLowerCase().includes(texto)
+  );
+
+  if (resultados.length === 0) {
+    mensajeError.textContent = "No se encontró ninguna coincidencia.";
+  } else {
+    mensajeError.textContent = "";
+    // Acá podrías mostrar los resultados en cards o en lista
+    console.log("Coincidencias:", resultados);
+  }
+});
+//fin lau
