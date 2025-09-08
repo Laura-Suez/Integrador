@@ -26,7 +26,6 @@ const catalogo = [
     titulo: "Interstellar",
     tipo: "pelicula",
     img: "assets/img/peliculas/interestellar.jpg",
-    wallPaper: "assets/img/series/peliculas/inception.jpg",
   },
   {
     id: 5,
@@ -131,12 +130,12 @@ function carruselPrincipal() {
     div.classList.add("carousel-item");
     if (index === 0) div.classList.add("active");
     div.innerHTML = `
-      <img src="${peli.wallPaper}" class="d-block w-100" alt="${peli.titulo}" style="height:60vh; object-fit:cover; filter: brightness(70%);">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>${peli.titulo}</h5>
-        <a href="#" class="btn btn-danger">Ver ahora</a>
-      </div>
-    `;
+     <img src="${peli.wallPaper}" class="d-block w-100" alt="${peli.titulo}" style="height:60vh; object-fit:cover; filter: brightness(70%);">
+     <div class="carousel-caption d-none d-md-block">
+       <h5>${peli.titulo}</h5>
+       <a href="#" class="btn btn-danger">Ver ahora</a>
+     </div>
+   `;
     container.appendChild(div);
   });
 }
@@ -149,9 +148,9 @@ function carruselHorizontal(idContenedor, lista) {
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-      <img src="${item.img}" class="img-fluid rounded" alt="${item.titulo}">
-      <h6 class="mt-1">${item.titulo}</h6>
-    `;
+     <img src="${item.img}" class="img-fluid rounded" alt="${item.titulo}">
+     <h6 class="mt-1">${item.titulo}</h6>
+   `;
     container.appendChild(card);
   });
 }
