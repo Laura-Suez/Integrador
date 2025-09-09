@@ -225,6 +225,23 @@ const catalogo = [
   },
 ];
 
+// Función para mostrar cards en grid
+function mostrarCards(idContenedor, lista) {
+  const container = document.getElementById(idContenedor);
+  if (!container) return;
+
+  lista.forEach((item) => {
+    const card = document.createElement("a"); // <a> para linkear a detalle
+    card.href = `/html/detalle.html?id=${item.id}`;
+    card.className = "card";
+    card.innerHTML = `
+      <img src="${item.img}" class="img-fluid" alt="${item.titulo}">
+      <p class="card-text">${item.titulo}</p>
+    `;
+    container.appendChild(card);
+  });
+}
+
 // Carrusel principal (grande)
 function carruselPrincipal() {
   const container = document.getElementById("carousel-principal-inner");
@@ -235,69 +252,26 @@ function carruselPrincipal() {
     div.classList.add("carousel-item");
     if (index === 0) div.classList.add("active");
     div.innerHTML = `
-     <img src="${peli.wallPaper}" class="d-block w-100" alt="${peli.titulo}" style="height:60vh; object-fit:cover; filter: brightness(70%);">
-     <div class="carousel-caption d-none d-md-block">
-       <h5>${peli.titulo}</h5>
-       <a href="#" class="btn btn-danger">Ver ahora</a>
-     </div>
-   `;
+      <img src="${peli.wallPaper}" class="d-block w-100" alt="${peli.titulo}" style="height:60vh; object-fit:cover; filter: brightness(70%);">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>${peli.titulo}</h5>
+        <a href="/html/detalle.html?id=${peli.id}" class="btn btn-danger">Ver ahora</a>
+      </div>
+    `;
     container.appendChild(div);
   });
 }
 
-// Carrusel horizontal
-function carruselHorizontal(idContenedor, lista) {
-  const container = document.getElementById(idContenedor);
-  if (!container) return;
-  lista.forEach((item) => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.innerHTML = `
-     <img src="${item.img}" class="img-fluid rounded" alt="${item.titulo}">
-     <h6 class="mt-1">${item.titulo}</h6>
-   `;
-    container.appendChild(card);
-  });
-}
-
-// Inicialización
-carruselPrincipal();
-carruselHorizontal(
+// Mostrar 6 películas y 6 series en cards
+mostrarCards(
   "peliculas-destacadas",
   catalogo.filter((p) => p.tipo === "pelicula").slice(0, 6)
 );
-carruselHorizontal(
+
+mostrarCards(
   "series-destacadas",
   catalogo.filter((s) => s.tipo === "serie").slice(0, 6)
 );
 
-//Buscador
-const inputBuscador = document.getElementById("buscador");
-const mensajeError = document.getElementById("mensaje-error");
-
-// Simulación de array de películas (o series)
-const peliculas = ["Matrix", "Titanic", "Inception", "Shrek", "Avatar"];
-
-inputBuscador.addEventListener("input", () => {
-  const texto = inputBuscador.value.toLowerCase().trim();
-
-  // Si está vacío, limpio todo
-  if (texto === "") {
-    mensajeError.textContent = "";
-    return;
-  }
-
-  // Filtrar películas
-  const resultados = peliculas.filter((peli) =>
-    peli.toLowerCase().includes(texto)
-  );
-
-  if (resultados.length === 0) {
-    mensajeError.textContent = "No se encontró ninguna coincidencia.";
-  } else {
-    mensajeError.textContent = "";
-    // Acá podrías mostrar los resultados en cards o en lista
-    console.log("Coincidencias:", resultados);
-  }
-});
-//fin lau
+// Inicialización del carrusel grande
+carruselPrincipal();
