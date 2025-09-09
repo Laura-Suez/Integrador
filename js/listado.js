@@ -121,7 +121,7 @@ const catalogo = [
     Descripcion:
       "Un profesor de química diagnosticado con cáncer comienza a fabricar metanfetaminas con un exalumno para asegurar el futuro de su familia.",
     Año: 2008,
-    Creador: "Vince Gilligan",
+    Director: "Vince Gilligan",
     trailer: "https://www.youtube.com/embed/HhesaQXLuRY",
   },
   {
@@ -132,7 +132,7 @@ const catalogo = [
     Descripcion:
       "Nobles familias luchan por el control de los Siete Reinos de Westeros mientras una antigua amenaza se cierne desde el norte.",
     Año: 2011,
-    Creador: "David Benioff y D. B. Weiss",
+    Director: "David Benioff y D. B. Weiss",
     trailer: "https://www.youtube.com/embed/KPLWWIOCOOQ",
   },
   {
@@ -143,7 +143,7 @@ const catalogo = [
     Descripcion:
       "En un pequeño pueblo de los años 80, un grupo de niños enfrenta fenómenos sobrenaturales tras la desaparición de uno de sus amigos.",
     Año: 2016,
-    Creador: "Los Hermanos Duffer",
+    Director: "Los Hermanos Duffer",
     trailer: "https://www.youtube.com/embed/mnd7sFt5c3A",
   },
   {
@@ -154,7 +154,7 @@ const catalogo = [
     Descripcion:
       "La vida de la reina Isabel II y los eventos históricos y políticos que marcaron la segunda mitad del siglo XX en el Reino Unido.",
     Año: 2016,
-    Creador: "Peter Morgan",
+    Director: "Peter Morgan",
     trailer: "https://www.youtube.com/embed/JWtnJjn6ng0",
   },
   {
@@ -165,7 +165,7 @@ const catalogo = [
     Descripcion:
       "En un pueblo alemán, la desaparición de un niño expone secretos familiares y una conspiración que abarca varias generaciones.",
     Año: 2017,
-    Creador: "Baran bo Odar y Jantje Friese",
+    Director: "Baran bo Odar y Jantje Friese",
     trailer: "https://www.youtube.com/embed/rrwycJ08PSA",
   },
   {
@@ -176,7 +176,7 @@ const catalogo = [
     Descripcion:
       "El brujo Geralt de Rivia lucha por encontrar su lugar en un mundo donde los humanos suelen ser más perversos que los monstruos.",
     Año: 2019,
-    Creador: "Lauren Schmidt Hissrich",
+    Director: "Lauren Schmidt Hissrich",
     trailer: "https://www.youtube.com/embed/ndl1W4ltcmg",
   },
   {
@@ -187,7 +187,7 @@ const catalogo = [
     Descripcion:
       "Un grupo de delincuentes, liderados por 'El Profesor', lleva a cabo el mayor atraco de la historia en la Fábrica Nacional de Moneda y Timbre.",
     Año: 2017,
-    Creador: "Álex Pina",
+    Director: "Álex Pina",
     trailer: "https://www.youtube.com/embed/To_kVMMu-Ls",
   },
   {
@@ -198,7 +198,7 @@ const catalogo = [
     Descripcion:
       "Un cazarrecompensas solitario navega por la galaxia lejos de la autoridad de la Nueva República, cuidando a un misterioso niño de la especie de Yoda.",
     Año: 2019,
-    Creador: "Jon Favreau",
+    Director: "Jon Favreau",
     trailer: "https://www.youtube.com/embed/aOC8E8z_ifw",
   },
   {
@@ -209,7 +209,7 @@ const catalogo = [
     Descripcion:
       "Seis amigos de Nueva York comparten su vida, sus relaciones y sus aventuras a lo largo de diez temporadas llenas de humor y momentos icónicos.",
     Año: 1994,
-    Creador: "David Crane y Marta Kauffman",
+    Director: "David Crane y Marta Kauffman",
     trailer: "https://www.youtube.com/embed/hDNNmeeJs1Q",
   },
   {
@@ -220,7 +220,7 @@ const catalogo = [
     Descripcion:
       "Una mirada en formato de falso documental a la vida cotidiana de los empleados de la oficina regional de Dunder Mifflin en Scranton.",
     Año: 2005,
-    Creador: "Greg Daniels (versión estadounidense)",
+    Director: "Greg Daniels (versión estadounidense)",
     trailer: "https://www.youtube.com/embed/Vmb1tqYqyII",
   },
 ];
