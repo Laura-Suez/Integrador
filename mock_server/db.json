@@ -1,0 +1,40 @@
+{
+  "submissions": [
+    {
+      "id": "1",
+      "nombre": "Laura Suez",
+      "email": "laura@example.com",
+      "fecha": "2025-09-20",
+      "telefono": "+54 341 1234567",
+      "experiencia": "buena",
+      "mensaje": "Muy buen servicio, todo rápido y sencillo."
+    },
+    {
+      "id": "2",
+      "nombre": "Carlos Pérez",
+      "email": "carlos@example.com",
+      "fecha": "2025-09-18",
+      "telefono": "+54 11 9876543",
+      "experiencia": "mala",
+      "mensaje": "Tuve problemas con la atención, deberían mejorar."
+    },
+    {
+      "id": "a39a",
+      "nombre": "Guido",
+      "email": "guido@prueba.com",
+      "fecha": "1912-12-12",
+      "telefono": "3413223344",
+      "experiencia": "mala",
+      "mensaje": "Ojalá agreguen Los Simuladores pronto"
+    },
+    {
+      "id": "a263",
+      "nombre": "Guido",
+      "email": "guido@prueba.com",
+      "fecha": "1995-09-07",
+      "telefono": "3413223344",
+      "experiencia": "mala",
+      "mensaje": "Todavía no agregaron Los Simuladores"
+    }
+  ]
+}
