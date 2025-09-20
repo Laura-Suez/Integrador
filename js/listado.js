@@ -161,7 +161,7 @@ const catalogo = [
     id: 15,
     titulo: "Dark",
     tipo: "serie",
-    img: "assets/img/series/Dark}.jpg",
+    img: "assets/img/series/Dark.jpg",
     Descripcion:
       "En un pueblo alemán, la desaparición de un niño expone secretos familiares y una conspiración que abarca varias generaciones.",
     Año: 2017,
