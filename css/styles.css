@@ -1,14 +1,13 @@
 /* BODY Y NAVBAR */
-/*Subsección tema */
 .light{
-  background-color:#F4F4F2;
-  color: black;
+  background-color:#F4F4F2 !important;
+  color: black !important;
   transition: all 1.5s ease;
 }
 
 .dark{
-  background-color: #222;
-  color: white;
+  background-color: black !important;
+  color: white !important;
   transition: all 1.5s ease;
 }
 
@@ -26,8 +25,8 @@
 
 .light .navbar,
 .light footer {
-  background-color: #524949; 
-  color: white;
+  background-color: #524949 !important; 
+  color: white !important;
 }
 
 .light .navbar .nav-link ,
@@ -35,10 +34,10 @@
   color: white !important;
 }
 
-.dark .navbar,
+.dark .container-fluid,
 .dark footer {
-  background-color: #222; 
-  color: white;
+  background-color: #222 !important; 
+  color: white !important;
 }
 
 .dark .navbar .nav-link,
@@ -515,7 +514,6 @@ footer a:hover {
     top: 7px;
     font-size: 2em;
     cursor: pointer;
-    color: whitesmoke;
   }
 }
 
@@ -554,7 +552,6 @@ footer a:hover {
     top: 7px;
     font-size: 2em;
     cursor: pointer;
-    color: whitesmoke;
   }
 }
 
@@ -610,7 +607,6 @@ footer a:hover {
     top: 7px;
     font-size: 2em;
     cursor: pointer;
-    color: whitesmoke;
   }
 }
 
