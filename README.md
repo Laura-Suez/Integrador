@@ -9,16 +9,16 @@ Este proyecto simula una plataforma de streaming, presentando una cuidada selecc
 ## Capturas de Pantalla
 
 **Página de Inicio**
-![](/assets/img/capturas/Inicio.png)
+![](/assets/img/capturas/Inicio.png) 
 
 **Catálogo de Películas**
-![](/assets/img/capturas/CatalogoPeliculas.png)
+![](/assets/img/capturas/CatalogoPeliculas.png) 
 
 **Catálogo de Series**
-![]()
+![](/assets/img/capturas/CatalogoSeries.png) 
 
 **Contacto**
-![](/assets/img/capturas/Contacto.png)
+![](/assets/img/capturas/Contacto.png) 
 
 ## Tecnologías Utilizadas
 
