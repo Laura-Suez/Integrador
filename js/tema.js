@@ -1,15 +1,37 @@
-let toggle = document.getElementById(`toggle`);
-let label_toggle = document.getElementById(`label_toggle`);
+// tema.js
+// Aplica el tema antes de cualquier render
+(function () {
+  const body = document.body;
+  const toggle = document.getElementById("toggle");
 
-toggle.addEventListener(`change`, (event)=>{
-    let checked = event.target.checked;
-    if(checked){
-        document.body.classList.add('dark');
-        document.body.classList.remove('light');
-        label_toggle.innerHTML = `<i class="fa-regular fa-sun icon-sun"></i>`;
-    }else{
-        document.body.classList.add('light');
-        document.body.classList.remove('dark');
-        label_toggle.innerHTML = `<i class="fa-regular fa-moon icon-moon"></i>`;
-    }
-});
+  // Leer tema guardado o usar 'dark' por defecto
+  const temaGuardado = localStorage.getItem("tema") || "dark";
+
+  // Aplicar tema inicial
+  if (temaGuardado === "light") {
+    body.classList.add("light");
+    body.classList.remove("dark");
+    if (toggle) toggle.checked = true;
+  } else {
+    body.classList.add("dark");
+    body.classList.remove("light");
+    if (toggle) toggle.checked = false;
+  }
+
+  // Esperar a que el DOM esté cargado para asignar el evento
+  document.addEventListener("DOMContentLoaded", () => {
+    if (!toggle) return;
+
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        body.classList.add("light");
+        body.classList.remove("dark");
+        localStorage.setItem("tema", "light");
+      } else {
+        body.classList.add("dark");
+        body.classList.remove("light");
+        localStorage.setItem("tema", "dark");
+      }
+    });
+  });
+})();
